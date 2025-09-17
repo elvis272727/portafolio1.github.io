@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pagina1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ELVIS.DEV | PORTAFOLIO ACADEMICO</title>
+    <meta name="description" content="Portafolio Cyberpunk de Yurian Quispe Victoria - Ingeniería de Sistemas y Computación | Tecnología del Futuro">
+    <meta name="keywords" content="portafolio, ingeniería sistemas, base datos, azure, tecnología, futuro">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="Iconos/programming.svg" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap" as="style">
+</head>
+<body>
+    <!-- Efecto de matriz de fondo -->
+    <div class="matrix-bg" aria-hidden="true"></div>
+    
+    <!-- Navegación Futurista -->
+    <header class="cyber-header">
+        <nav class="cyber-nav">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#" id="toggle-dark-mode" class="logo-link">
+                        <span class="logo-bracket">[</span>
+                        <span class="logo-text">ELVIS</span>
+                        <span class="logo-bracket">]</span>
+                        <span class="logo-cursor">_</span>
+                    </a>
+                </div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links cyber-menu">
+                    <label for="close-btn" class="btn close-btn cyber-close"><i class="fas fa-times"></i></label>
+                    <li class="nav-item">
+                        <a href="#tareas-academicas" class="cyber-link">
+                            <i class="fas fa-graduation-cap"></i> TAREAS ACADÉMICAS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="show-modal cyber-link" data-title=">>> SISTEMA: INFORMACIÓN PERSONAL" data-message="USUARIO: Yurian Quispe Victoria | CARRERA: Ingeniería de Sistemas y Computación | ESTADO: Activo | ESPECIALIDAD: Tecnología y Ciencia | NIVEL: Estudiante Avanzado | PASIÓN: Desarrollo de software y bases de datos">
+                            <i class="fas fa-user-astronaut"></i> SOBRE MI
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacto" class="cyber-link">
+                            <i class="fas fa-satellite-dish"></i> CONTACTO
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#admin" class="cyber-link">
+                            <i class="fas fa-cog"></i> ADMIN
+                        </a>
+                    </li>
+                </ul>
+                <label for="menu-btn" class="btn menu-btn cyber-menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Modal Futurista -->
+    <div id="modal" class="modal cyber-modal">
+        <div class="modal-content cyber-modal-content">
+            <span class="close-btn cyber-modal-close">&times;</span>
+            <div class="modal-header">
+                <div class="modal-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SISTEMA ACTIVO</span>
+                </div>
+            </div>
+            <h2 id="modal-title" class="cyber-title"></h2>
+            <p id="modal-message" class="cyber-text"></p>
+            <div class="modal-footer">
+                <div class="terminal-line">root@Elvis:~$ █</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="intro cyber-intro">
+        <div class="intro-content">
+            <div class="title-container">
+                <h1 class="cyber-main-title">
+                    <span class="title-line">&gt; PORTAFOLIO</span>
+                    <span class="title-highlight">ACADÉMICO_</span>
+                    <span class="version">v2.0</span>
+                </h1>
+                <div class="subtitle-container">
+                    <div class="loading-bar">
+                        <div class="loading-progress"></div>
+                    </div>
+                    <p class="cyber-subtitle">
+                        <span class="terminal-prompt">Elvis@sistemas:~$</span> 
+                        Inicializando repositorio de proyectos académicos...
+                        <span class="cursor-blink">█</span>
+                    </p>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">Soy un estudiante de ingeniería de sistemas con una gran pasión por la programación y la resolución de problemas. Me especializo en el diseño de 
+                        bases de datos, el desarrollo de software y el análisis de sistemas.</div>
+                    <div class="stat-label">Mi objetivo es utilizar la tecnología para crear soluciones eficientes e innovadoras. Estoy siempre buscando aprender 
+                        nuevas habilidades y contribuir a proyectos desafiantes.</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">ARCHIVOS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">APRENDIZAJE</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: TAREAS ACADÉMICAS -->
+    <section id="tareas-academicas" class="academic-section">
+        <div class="section-header">
+            <h2 class="section-title">
+                <i class="fas fa-code"></i>
+                <span class="section-bracket">[</span>
+                TAREAS ACADÉMICAS
+                <span class="section-bracket">]</span>
+            </h2>
+            <p class="section-description">Repositorio completo de trabajos universitarios organizados por semanas</p>
+        </div>
+
+        <div class="container cyber-grid">
+            <!-- SEMANA 01 -->
+            <div class="feature-box cyber-card" data-week="01">
+                <div class="card-header">
+                    <span class="card-id">WEEK_01.EXE</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming.svg" alt="Programación" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">SEMANA 01</h2>
+                <p class="cyber-description">Diagrama y Practica</p>
+                <div class="button-group cyber-buttons">
+                    <a href="https://www.canva.com/design/DAGzMSEG2qU/YULC51At5A1v_JEv6DwnFQ/view?utm_content=DAGzMSEG2qU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h12fd24f7f1" class="custom-button cyber-btn primary" target="_blank" rel="noopener">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>manual de instalacion</span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAGzMgtOOSk/uaqWVURxruWGEAqyRf1egg/view?utm_content=DAGzMgtOOSk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h00619c370f" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">
+                        <i class="fas fa-palette"></i>
+                        <span>PRACTICA 1</span>
+                    </a>
+                    <a href="https://www.canva.com/design/DAGy4YZJfTA/mWtaHjc4iMFBphz4OHlcfw/view?utm_content=DAGy4YZJfTA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5eb370c008" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">
+                        <i class="fas fa-palette"></i>
+                        <span>INFORMME TECNICO</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEMANA 02 -->
+            <div class="feature-box cyber-card" data-week="02">
+                <div class="card-header">
+                    <span class="card-id">WEEK_02.DB</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-1.svg" alt="Modelo Relacional" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 02</h2>
+                <h2 class="cyber-card-subtitle">Modelo Relacional</h2>
+                <div class="button-group cyber-buttons">
+                    <div class="exercise-group">
+                        <strong>Enunciado 1:</strong>
+                        <a href="....." class="custom-button cyber-btn primary" target="_blank" rel="noopener">Canva</a>
+                    </div>
+                    <div class="exercise-group">
+                        <strong>Enunciado 2:</strong>
+                        <a href="...." class="custom-button cyber-btn primary" target="_blank" rel="noopener">Canva</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEMANA 03 -->
+            <div class="feature-box cyber-card" data-week="03">
+                <div class="card-header">
+                    <span class="card-id">WEEK_03.TBL</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-2.svg" alt="Tablas" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 03</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/spreadsheets/d/1Sk12gSpmH-5YUzsZd6j6cFm_DnRaNpFguwDB6bbgcEo/edit?gid=627531248#gid=627531248" class="custom-button cyber-btn primary" target="_blank" rel="noopener">Tablas</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 04 -->
+            <div class="feature-box cyber-card" data-week="04">
+                <div class="card-header">
+                    <span class="card-id">WEEK_04.ADV</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-2.svg" alt="Base de datos" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 04</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/spreadsheets/d/1aK6Or0g157QAtJsptAKmK1gWxZpa1d3j5TaqiSx7tk8/edit?gid=195376030#gid=195376030" class="custom-button cyber-btn primary" target="_blank" rel="noopener">TABLA 2 BASE DE DATOS</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 05 -->
+            <div class="feature-box cyber-card locked" data-week="05">
+                <div class="card-header">
+                    <span class="card-id">WEEK_05.DEV</span>
+                    <div class="card-status">
+                        <span class="status-indicator pending"></span>
+                        <span class="status-text">DESARROLLO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-3.svg" alt="En desarrollo" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 05</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://example.com" class="custom-button cyber-btn disabled" target="_blank" rel="noopener">Ver</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 06 -->
+            <div class="feature-box cyber-card" data-week="06">
+                <div class="card-header">
+                    <span class="card-id">WEEK_06.AZR</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-4.svg" alt="Azure" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 06</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/18yF7wg6ExwatzVnEvujcfgDikj09ibVrU8v7tzWwWTM/edit?pli=1&tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">Conexion Sql Con Microsoft Azure</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 07 -->
+            <div class="feature-box cyber-card" data-week="07">
+                <div class="card-header">
+                    <span class="card-id">WEEK_07.DOC</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-5.svg" alt="Manual" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 07</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1ClflV5KB83S19a_yis6aOMlByG3gK6kMlokuCn7RDmE/edit?tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">Manual Microsoft Azure</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 08 -->
+            <div class="feature-box cyber-card" data-week="08">
+                <div class="card-header">
+                    <span class="card-id">WEEK_08.WEB</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-5.svg" alt="Web desarrollo" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 08</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1kqhCZb21vZwizu6ky2RNgX10CwthtlEw5MytAchTkwk/edit?tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">Manual Pagina Web Azure</a>
+                    <a href="https://docs.google.com/document/d/1kqhCZb21vZwizu6ky2RNgX10CwthtlEw5MytAchTkwk/edit?tab=t.0" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">Manual Base De Datos microsoft Azure</a>
+                </div>
+            </div>
+
+            <!-- PRIMERA PARCIAL 
+            <div class="feature-box cyber-card evaluation" data-week="parcial">
+                <div class="card-header">
+                    <span class="card-id">EVAL_01.EXM</span>
+                    <div class="card-status">
+                        <span class="status-indicator critical"></span>
+                        <span class="status-text">EXAMEN</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-1.svg" alt="Evaluación" class="icon-img">
+                    <div class="icon-glow critical-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Primera Parcial</h2>
+                <div class="button-group cyber-buttons grid-buttons">
+                    <a href="https://docs.google.com/document/d/1ClflV5KB83S19a_yis6aOMlByG3gK6kMlokuCn7RDmE/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 01</a>
+                    <a href="https://docs.google.com/document/d/11ifMwB3YL5bXKuNffwv9u2YagSKe0SeR-KLKpYAOLDc/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 02</a>
+                    <a href="https://docs.google.com/document/d/1JGhMfvB3LutjiojaiUtbrVViQ3hSDqEVO44nQyVqbCY/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 03</a>
+                    <a href="https://docs.google.com/document/d/14CvIiN8rGtSx1824vNSC2jvIkfgdcW35BYU1Vw6wk40/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 04</a>
+                    <a href="https://docs.google.com/document/d/1Fis2LFnucdBYXvIr2wEDz_GQfFt1_PrOB8ClI3ruGx0/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 05</a>
+                    <a href="https://docs.google.com/document/d/1Fis2LFnucdBYXvIr2wEDz_GQfFt1_PrOB8ClI3ruGx0/edit?tab=t.0" class="custom-button cyber-btn exam" target="_blank" rel="noopener">Sesion 06</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 10 
+            <div class="feature-box cyber-card" data-week="10">
+                <div class="card-header">
+                    <span class="card-id">WEEK_10.ACT</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-5.svg" alt="Actividades" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 10</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1kMVq2QJCvcr_nlvWttTFUMbC2fKAwHp3yPtqd2wZ51w/edit?tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">ACTIVIDAD 01</a>
+                    <a href="https://docs.google.com/document/d/1CVCoVpQUEl65JyMMplDbBSbH5nPT0AUrE2y2pmEfDYg/edit?usp=sharing" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">ACTIVIDAD 02</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 11
+            <div class="feature-box cyber-card" data-week="11">
+                <div class="card-header">
+                    <span class="card-id">WEEK_11.MDL</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-5.svg" alt="Modelo gráfico" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 11</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1NSAzer5MgOHIZeDQ6q7fCOTbbsCd6Cdvo5c-fbT_RQU/edit?usp=sharing" class="custom-button cyber-btn primary" target="_blank" rel="noopener">BASE DE DATOS</a>
+                    <a href="https://docs.google.com/document/d/1bWTgPjQr1vga6Gsy9rDPC8PxIhyGBMmmj7A2-RqvyAU/edit?usp=sharing" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">Modelo Grafico</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 12
+            <div class="feature-box cyber-card" data-week="12">
+                <div class="card-header">
+                    <span class="card-id">WEEK_12.MOD</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-9.svg" alt="Módulos" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 12</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1nWgIF3HV47PYL_sN8s7pEa4IPf3yaJC7rYq6WU7NOPE/edit?tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">MODULO 1</a>
+                    <a href="https://docs.google.com/document/d/1UJ5nPwyJYItjiDNS-WN4EgQYSV88OWW5HhjEjTtQtr0/edit?tab=t.0" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">MODULO 2</a>
+                    <a href="https://docs.google.com/document/d/1ostMs69jrF4yzAcoM1GVLBJuZ84ep-813vbVnWHO_fA/edit?tab=t.0" class="custom-button cyber-btn tertiary" target="_blank" rel="noopener">MODULO 3</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 13
+            <div class="feature-box cyber-card" data-week="13">
+                <div class="card-header">
+                    <span class="card-id">WEEK_13.MOD</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-10.svg" alt="Módulos avanzados" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 13</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1x3zSwmTm_sXTu0Bve8oC95Wn9Af8ZIDOxFYTnbL7iK4/edit?usp=sharing" class="custom-button cyber-btn primary" target="_blank" rel="noopener">MODULO 4</a>
+                    <a href="https://docs.google.com/document/d/1yCq3-OkgONgMDxK4mF79Jb6E2npeANMMGp1Eg_XleUQ/edit?usp=sharing" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">MODULO 5</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 14 
+            <div class="feature-box cyber-card" data-week="14">
+                <div class="card-header">
+                    <span class="card-id">WEEK_14.MOD</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-11.svg" alt="Módulos finales" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 14</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/1watROCoA9yBditgzPizugqyBJjv15FpM1g4MMiAjOAc/edit?tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">MODULO 6</a>
+                    <a href="https://docs.google.com/document/d/1kjpIfJs1yrc7IMShAq0hM1xR2dSgfdax9iP4NE_6Fo0/edit?usp=sharing" class="custom-button cyber-btn secondary" target="_blank" rel="noopener">MODULO 7</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 15 
+            <div class="feature-box cyber-card" data-week="15">
+                <div class="card-header">
+                    <span class="card-id">WEEK_15.MOD</span>
+                    <div class="card-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">COMPLETADO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-12.svg" alt="Módulo 8" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 15</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://docs.google.com/document/d/18yF7wg6ExwatzVnEvujcfgDikj09ibVrU8v7tzWwWTM/edit?pli=1&tab=t.0" class="custom-button cyber-btn primary" target="_blank" rel="noopener">MODULO 8</a>
+                </div>
+            </div>
+
+            <!-- SEMANA 16 
+            <div class="feature-box cyber-card locked" data-week="16">
+                <div class="card-header">
+                    <span class="card-id">WEEK_16.DEV</span>
+                    <div class="card-status">
+                        <span class="status-indicator pending"></span>
+                        <span class="status-text">DESARROLLO</span>
+                    </div>
+                </div>
+                <div class="icon cyber-icon">
+                    <img src="Iconos/programming-13.svg" alt="En desarrollo" class="icon-img">
+                    <div class="icon-glow"></div>
+                </div>
+                <h2 class="cyber-card-title">Semana 16</h2>
+                <div class="button-group cyber-buttons">
+                    <a href="https://example.com" class="custom-button cyber-btn disabled" target="_blank" rel="noopener">Ver</a>
+                </div>
+            </div> -->
+            <section id="contacto" class="contact-section">
+  <h2>Contacto</h2>
+  <p>¿Tienes alguna pregunta o proyecto en mente? Escríbeme y me pondré en contacto contigo.</p>
+
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo</label>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+    </div>
+
+    <div class="form-group" style="grid-column: span 2;">
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    </div>
+
+    <button type="submit">Enviar Mensaje</button>
+  </form>
+</section>
+
+
+<!-- ==============================
+     FOOTER
+================================= -->
+<footer>
+  <p>© 2025 - Mi Portafolio Futurista | Todos los derechos reservados</p>
+</footer>
